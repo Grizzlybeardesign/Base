@@ -1,0 +1,532 @@
+// Insert styles here
+.grid {
+    position: relative;
+    clear: both;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+/* Common style */
+.grid figure {
+    position: relative;
+    overflow: hidden;
+    min-width: 100%;
+    max-height: 100%;
+    width: 48%;
+    text-align: center;
+    cursor: pointer;
+    margin:0 0 30px;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: auto;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+.grid figure figcaption {
+    top:50%;
+    transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
+    -webkit-transform:-webkit-translateY(-50%);       
+    padding: 2em;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.grid figure figcaption {
+    top:50%;
+    transform: translateY(-50%);
+    -webkit-transform:translateY(-50%);
+    -webkit-transform:-webkit-translateY(-50%);
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+.grid figure h3 { 
+    display:block;
+    height:100%;
+    margin:0 auto;
+    opacity:0;
+    word-spacing: -0.15em;
+    font-weight: 300;
+    color:$white;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;    
+}
+
+.grid figure figcaption h3 span {
+    left:0;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
+    -webkit-transform:-webkit-translateY(-50%);
+    width:100%
+}
+
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+/*-----------------*/
+/***** Apollo *****/
+/*-----------------*/
+
+figure.effect-apollo {
+    background: #3498db;
+}
+
+figure.effect-apollo img {
+    opacity: 0.95;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale3d(1.05,1.05,1);
+    transform: scale3d(1.05,1.05,1);
+}
+
+figure.effect-apollo figcaption::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.5);
+    content: '';
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform: scale3d(2.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+    transform: scale3d(2.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+}
+
+figure.effect-apollo p {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 3em;
+    padding: 0 1em;
+    max-width: 150px;
+    border-right: 4px solid $white;
+    text-align: right;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+figure.effect-apollo h2 {
+    text-align: left;
+    font-size:28px;
+}
+
+figure.effect-apollo:hover img {
+    opacity: 0.6;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+
+figure.effect-apollo:hover figcaption::before {
+    -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+    transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+}
+
+figure.effect-apollo:hover p {
+    opacity: 1;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+/*---------------*/
+/***** Ming *****/
+/*---------------*/
+
+figure.effect-ming {
+    background: #030c17;
+    img {
+        opacity: 0.9;
+        -webkit-transition: opacity 0.35s;
+        transition: opacity 0.35s;
+    }
+    h2 {
+        margin: 20% 0 10px 0;
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+    }
+    p {
+        padding: 1em;
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+    figcaption::before {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        bottom: 30px;
+        left: 30px;
+        border: 2px solid $white;
+        box-shadow: 0 0 0 30px rgba(255,255,255,0.2);
+        content: '';
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: scale3d(1.4,1.4,1);
+        transform: scale3d(1.4,1.4,1);
+    }
+    &:hover {
+        h2 {
+            -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+        }
+        figcaption {
+            background-color: rgba(58,52,42,0);
+        }
+        img {
+            opacity: 0.4;
+        }
+    }
+}
+
+
+figure.effect-ming:hover figcaption::before,
+figure.effect-ming:hover p {
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+
+/*---------------*/
+/***** Salmon *****/
+/*---------------*/
+
+figure.effect-salmon {
+    background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+    background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
+    img {
+        opacity: 0.9;
+        -webkit-transition: opacity 0.35s;
+        transition: opacity 0.35s;
+    }
+    h3 {
+        opacity:0;
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+    }
+    figcaption {
+        padding: 3em;
+        -webkit-transition: background-color 0.35s;
+        transition: background-color 0.35s;
+        &:before {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            bottom: 30px;
+            left: 30px;
+            border: 1px solid $white;
+            content: '';
+        }
+    }
+    &:hover {
+        h3 {
+            opacity:1;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;    
+        }
+        img {
+            opacity: 0.4;
+        }
+    }
+}
+
+
+figure.effect-salmon figcaption::before,
+figure.effect-salmon p {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+figure.effect-salmon:hover figcaption::before,
+figure.effect-salmon:hover p {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+figure.effect-salmon:hover figcaption {
+    background-color: rgba(58,52,42,0);
+}
+
+/*---------------*/
+/***** forest *****/
+/*---------------*/
+
+figure.effect-forest {
+    background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
+    background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
+}
+
+figure.effect-forest img {
+    opacity:1;
+    max-width: none;
+    width: -webkit-calc(100% + 60px);
+    width: calc(100% + 60px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-50px,0,0);
+    transform: translate3d(-50px,0,0);
+}
+
+figure.effect-forest figcaption::before {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    border: 1px solid $white;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-20px,0,0);
+    transform: translate3d(-20px,0,0);
+}
+
+figure.effect-forest figcaption {
+    padding: 3em;
+    text-align: left;
+}
+
+figure.effect-forest h3 {
+    opacity:0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;    
+    text-align:center;
+}
+
+figure.effect-forest p {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-10px,0,0);
+    transform: translate3d(-10px,0,0);
+}
+
+figure.effect-forest:hover img {
+    opacity: 0.7;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+figure.effect-forest:hover figcaption::before, figure.effect-forest:hover h3,
+figure.effect-forest:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+/*---------------*/
+/***** Cub *****/
+/*---------------*/
+
+figure.effect-cub {
+    background: #9e5406;
+}
+
+figure.effect-cub img {
+    opacity: 0.9;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+figure.effect-cub h3 {
+    opacity:0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;    
+}
+figure.effect-cub:hover img {
+    opacity: 0.4;
+}
+
+figure.effect-cub figcaption::before,
+figure.effect-cub figcaption::after {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-cub figcaption::before {
+    border-top: 1px solid $white;
+    border-bottom: 1px solid $white;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+}
+
+figure.effect-cub figcaption::after {
+    border-right: 1px solid $white;
+    border-left: 1px solid $white;
+    -webkit-transform: scale(1,0);
+    transform: scale(1,0);
+}
+
+figure.effect-cub p {
+    padding: 20px 2.5em;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,20px,0);
+    transform: translate3d(0,20px,0);
+}
+
+figure.effect-cub:hover figcaption::before,
+figure.effect-cub:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+figure.effect-cub:hover h3,
+figure.effect-cub:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+/*---------------*/
+/***** Paw *****/
+/*---------------*/
+
+figure.effect-paw {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+figure.effect-paw img {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,0,300px);
+    transform: translate3d(0,0,300px);
+}
+
+figure.effect-paw:hover img {
+    opacity: 0.6;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+figure.effect-paw figcaption::before,
+figure.effect-paw figcaption::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 1px;
+    background: $white;
+    content: '';
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+}
+
+figure.effect-paw:hover figcaption::before {
+    opacity: 0.5;
+    -webkit-transform: translate3d(-50%,-50%,0) rotate(45deg);
+    transform: translate3d(-50%,-50%,0) rotate(45deg);
+}
+
+figure.effect-paw:hover figcaption::after {
+    opacity: 0.5;
+    -webkit-transform: translate3d(-50%,-50%,0) rotate(-45deg);
+    transform: translate3d(-50%,-50%,0) rotate(-45deg);
+}
+
+figure.effect-paw:hover h3 {
+    opacity:1;
+    -webkit-transform: translate3d(0,-50%,0) translate3d(0,-100%,0);
+    transform: translate3d(0,-50%,0) translate3d(0,-100%,0);
+}
+
+/*---------------*/
+/***** River *****/
+/*---------------*/
+
+figure.effect-river img {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(1.12);
+    transform: scale(1.12);
+}
+
+figure.effect-river:hover img {
+    opacity: 0.5;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+figure.effect-river figcaption {
+    padding: 3em;
+}
+
+figure.effect-river figcaption::before {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    border: 1px solid $white;
+    content: '';
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+figure.effect-river figcaption::before {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+figure.effect-river:hover figcaption::before, figure.effect-river:hover h3 {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}

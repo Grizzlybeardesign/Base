@@ -1,0 +1,96 @@
+/* SOCIAL ICONS */
+.social-icons{
+    ul.social{
+        display:block;
+        text-align:center;
+        margin: 10px 0;
+        li {
+            float:none;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            font-size:105%;
+            a {
+                display:block;
+                width:25px;
+                height:25px;
+                border-radius:12.5px;
+                background:$white;
+                &:hover{
+                }
+                i {
+                    display: block;
+                    width:25px;
+                    height:25px;
+                    line-height:25px;
+                    color:$secondarycolor;
+                    @include transition(all, 0.5s, ease-in-out);
+                    &:hover{
+                        color:$primarycolor;
+                    }
+                }
+                i.fa-instagram{
+                    background:none;
+                }
+            }
+        }
+    }
+}
+
+/* FOOTER */
+#footer {
+    position: relative;
+    padding: 50px 0 21px;
+    background:$secondarycolor;
+    #footer-logo {
+        img {
+            max-width:150px;
+            display:block;
+            margin: 0 auto 25px;
+        }
+
+    }
+    .footer-contact-information {
+        p{
+            margin:0;
+            text-transform:capitalize;
+            font-family:$primaryfont;
+            color: $white;;
+            font-size: 12px;
+            line-height:14px;
+            text-align: center;
+            letter-spacing: 1.5px;
+        }
+    }
+    .menu {
+        li {
+            text-align:center;
+            line-height:22px;
+            a{
+                @include transition(all, 0.5s, ease-in-out);
+                color:$white;
+                &:hover{
+                    color:$lighterblue; /*Light Steel Blue*/
+                }
+            }
+        }
+    }
+}
+#copyright{
+    background:$primarycolor;
+    padding:10px 0;
+    p{
+        color:$white;
+        margin:0;
+        a{
+            color:$white;
+            @include transition(all, 0.5s, ease-in-out);
+            &:hover{
+                color:$lighterblue
+            }
+        }
+    }
+}
+
+
+

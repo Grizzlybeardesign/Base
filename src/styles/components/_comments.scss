@@ -1,0 +1,104 @@
+.index-card {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+span.author a:hover, span.author a:focus,
+time a:hover,
+time a:focus {
+    color: #444444;
+}
+#comments {
+    margin-top:25px;
+    h3 {
+        background:url(../img/header-btm-bdr.png) repeat-x left bottom;
+        padding-bottom:20px;
+        margin-bottom:15px;
+        font-size:22px;
+    }
+}
+.entry-author {
+    background-color: #fbfbfb;
+    border: none;
+    padding: 3.125rem 5rem;
+    .avatar {
+        margin-right: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+    h4 {
+        a {
+            color: #999;
+            &:hover, &:focus {
+                color: #444444;
+            }
+        }
+    }
+    p {
+        color: #bbb;
+    }
+}
+.entry-tags {
+    color: #999;
+    font-size: 0.9375rem;
+    a {
+        color: #999;
+        &:hover, &:focus {
+            color: #444444;
+        }
+    }
+}
+.avatar {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+}
+
+ol.commentlist {
+    margin-left: 0;
+    margin-top: 2em;
+    p {
+        font-size: 0.9375rem;
+        line-height: 1.5;
+    }
+    ul.children {
+        margin-left: 4rem;
+    }
+    li {
+        list-style: none;
+        margin-bottom: 2em;
+        .comment-author img {
+            float: left;
+            margin: 0 1em 0 0;
+        }
+        .author-meta {
+            display: inline-block;
+            time a {
+                color: #ccc;
+                font-size: 0.875rem;
+                margin-right: 0.5rem;
+            }
+            cite.fn {
+                font-style: normal;
+                font-weight: 600;
+                margin-right: 0.5rem;
+            }
+            .comment-edit-link {
+                color: #bbb;
+                font-size: 0.875rem;
+            }
+        }
+        section.comment {
+            margin-left: 4rem;
+            margin-bottom: 2rem;
+            a.comment-reply-link {
+                font-size: 0.875rem;
+                font-weight: 600;
+                color: #bbb;
+                &:hover, &:focus {
+                    color: #444444;
+                }
+            }
+        }
+    }
+}

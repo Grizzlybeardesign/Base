@@ -1,0 +1,89 @@
+
+body{
+    color: $primarycolor;
+    font-family:$primaryfont;
+    font-size: 14px;
+    text-align: justify;
+}
+h1, h2, h3, h4, h5, h6{
+    z-index:100;
+    position:relative;
+}
+h1 {
+    color: $primarycolor;
+    font-family: $secondaryfont;
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 1em;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+h1 {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-family: $secondaryfont;
+    color: $primarycolor;
+    font-size: 65px;
+    line-height: 44px;
+    font-weight: 400;
+}
+h2 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 20px;
+}
+h3 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+h4 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+h5 {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+h6 {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 10px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: $primarycolor;
+    font-family: $primaryfont;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    margin-bottom: 20px;
+    text-align: justify;  
+}
+a {
+    color:$primarycolor;
+    &:hover {
+        color:$secondarycolor;
+    }
+}
+a, a:visited, a:hover, a:visited:hover {
+    text-decoration: none;
+    @include transition(all, 100ms, linear);
+}
+.signature {
+    font-size: 30px;
+    font-family:$secondaryfont;
+    color:$primarycolor;
+    float: none;
+    font-weight: 400;
+    line-height: 1em;
+    margin-bottom: 0;
+    text-align: right;  
+}

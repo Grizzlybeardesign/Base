@@ -1,0 +1,37 @@
+.button__primary {
+    position: relative;
+    width: 190px;
+    margin:20px auto 0;
+    padding:15px;
+    background:$buttonbgcolor;
+    font-family: $primaryfont;
+    color: $buttoncolor;
+    line-height: 13px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.button__primary:hover {
+    background-color: $secondarycolor;
+    color: $white;
+}
+.button__secondary {
+    position: relative;
+    display: block;
+    width: 190px;
+    margin: 0 auto;
+    padding:15px;
+    background:$secondarybuttonbgcolor;
+    font-family: $primaryfont;
+    color: $secondarybuttoncolor;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    z-index:10;
+}
+
+.button__secondary:hover {
+    background:$secondarybuttonbghovercolor;
+    color: $secondarybuttonhovercolor;
+}

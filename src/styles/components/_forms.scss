@@ -1,0 +1,74 @@
+/* FORM ELEMENTS
+
+/* Gravity Forms Overide Styles*/
+
+.gform_wrapper {
+    .top_label {
+        div.ginput_container {
+            margin-top: 0!important;
+        }
+        .gfield_label{
+            display:none!important;
+        }
+    }
+    ul.gform_fields {
+        li.gfield {
+            padding-right: 0!important;
+            margin-top: 0!important;
+            padding-top: 0!important;
+        }
+    }
+    .gform_footer{
+        margin: 0!important;
+        padding: 0!important;
+        .button-wrapper, input[type="submit"]{
+            text-align:center;
+            margin: 0 auto;
+            display:block;
+            border:0 none;
+        } 
+        .button{
+            bottom:0!important;
+            margin:0!important;
+        }
+        .button-wrapper .button {
+    line-height: inherit;
+    padding: 9px 15px;
+    cursor: pointer;
+    @include border-radius(0);
+    font-family: $primaryfont;
+    letter-spacing: 1.5px;
+    border: 1px solid $white;
+    background: $secondarycolor;
+    color: $white;
+    @include transition(all, 0.5s, ease-in-out);
+    display: inline-block;
+    float: none;
+    width: inherit;
+    text-transform: uppercase;
+}
+    }
+}
+
+/*------------------------------*/
+
+.gform_footer .button-wrapper .button:hover, input:hover{
+    background:$lighterblue;
+    color:$primarycolor;
+}
+input[type="text"], input[type="email"], input[type="tel"] {
+    position:relative;
+    background:$white;
+    width:100%;
+    height: 75px;
+    margin:0 0 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border: 1px solid $secondarycolor;
+    font-family: $primaryfont;
+    color: $primarycolor;
+    &:focus {
+        border-color: $lighterblue;
+        color: $secondarycolor;
+    }
+}

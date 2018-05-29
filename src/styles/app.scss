@@ -1,0 +1,42 @@
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/* RESET */
+@import 'base/reset';
+@import 'base/normalize';
+
+/* MIXINS AND STYLING */
+@import 'mixins/_index';
+@import 'variables/_index';
+@import 'base/base';
+@import 'base/typography';
+
+/* LAYOUT */
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/footer';
+
+@import 'site/typography';
+
+/* COMPONENTS */
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/hovers';
+@import 'components/preloader';
+@import 'components/comments';
+@import 'components/gototop';
+@import 'components/sidebar';
+@import 'components/widgets';
+@import 'components/pagination';
+@import 'components/slider';
+@import 'components/lightgallery';
+
+/* PAGE STYLING */
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/gallery';
+@import 'pages/blog';
+@import 'pages/blog_single';
+@import 'pages/testimonials';
+@import 'pages/press';
+@import 'pages/contact';
+

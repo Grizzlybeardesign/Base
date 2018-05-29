@@ -1,0 +1,2171 @@
+    #grizzly-settings-wrap{
+
+     .option-update-status
+     {
+    width: auto;
+    position: fixed;
+    right: 20px;
+    z-index: 100;
+    height: auto;
+    background: rgba(92, 184, 92, .5);
+    padding: 20px;
+    -webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+text-transform: uppercase;
+font-weight: 600;
+line-height: 30px;
+bottom:20px;
+@include breakpoint(mx767){
+   width: 85%;
+    margin: 0 auto;
+   background: rgba(92, 184, 92, .8);
+    right: 5%;
+
+  }
+
+
+
+
+@include breakpoint(mx640){
+
+  width: 78%;
+  
+    right: 7%;
+  }
+
+   .dashicons {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    line-height: 1;
+    font-family: dashicons;
+    text-decoration: inherit;
+    font-weight: 400;
+    font-style: normal;
+    vertical-align: top;
+    text-align: center;
+    -webkit-transition: color .1s ease-in 0;
+    transition: color .1s ease-in 0;
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    margin-right: 10px;
+    padding: 6px;
+    border-radius: 4px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+     }
+
+     .option-update-status.error-status
+{
+  background: rgba(242, 222, 222, 1);
+
+  .dashicons-yes:before {
+    content: "\e101";
+}
+
+}
+
+
+
+      #optionsframework {
+       
+        background: #fff;
+        h3 {
+          cursor: default;
+          background-color: #f1f1f1;
+          text-transform:uppercase;
+          
+          padding: 12px 12px;
+          margin: 0;
+          margin-bottom: 25px;
+        }
+        p {
+          margin-bottom: 0;
+          padding-bottom: 10px;
+        }
+        #section-typography_h6.section {
+          padding: 0px 10px 30px 10px;
+          
+
+        }
+
+
+
+        .section {
+          padding: 0px 10px 0 10px;
+          h4 {
+            text-transform:uppercase;
+            color: #606060;
+            margin:20px 0px 15px 0px;
+
+          }
+
+          .import-options
+          {
+            margin-top:30px;
+
+          #import-data-button
+          {
+            border-radius: 0px;
+    text-transform: uppercase;
+    background-color: #93ba9e;
+    border: 0px;
+    color: #fff;
+    padding: 12px 27px;
+    height: auto;
+    font-weight: bold;
+    font-size: 12px;
+    box-shadow: none;
+ 
+    width: 34%;
+    line-height: 28px;
+    text-decoration: none;
+    margin-right: 20px;
+          }
+
+          #import-data-button
+          {
+            border-radius: 0px;
+    text-transform: uppercase;
+    background-color: #93ba9e;
+    border: 0px;
+    color: #fff;
+    padding: 12px 27px;
+    height: auto;
+    font-weight: bold;
+    font-size: 12px;
+    box-shadow: none;
+ 
+    width: 34%;
+    line-height: 28px;
+    text-decoration: none;
+    
+          }
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+        }
+        .group {
+          padding-bottom: 30px;
+        }
+        
+
+
+
+
+
+
+        .section.section-upload {
+          .controls {
+            width: 39%;
+            float: left;
+            
+            margin-bottom: 10px;
+            padding-right: 2%;
+
+            @include breakpoint(mx1320){
+              width: 50%;
+
+            }
+
+            @include breakpoint(mx1199){
+              width: 50%;
+
+            }
+
+            @include breakpoint(mx1024){
+              width: 40%;
+
+            }
+
+            @include breakpoint(mx991){
+              width: 50%;
+
+            }
+
+
+
+            @include breakpoint(mx767){
+              width: 60%;
+
+            }
+            @include breakpoint(mx640){
+              width: 80%;
+
+            }
+
+            @include breakpoint(mx480){
+              width: 100%;
+
+            }
+            
+
+
+
+
+
+          }
+          .explain {
+            width: 100%;
+            float: left;
+            font-size: 12px;
+            line-height: 16px;
+            color: #606060;
+            text-transform:uppercase;
+            font-weight: lighter;
+          }
+          .wp-picker-input-wrap
+          {
+            position: absolute;
+            z-index: 10; 
+          }
+          .wp-picker-holder
+          {
+            position: absolute;
+            z-index: 10;
+          }
+
+
+
+
+        }
+
+
+        .section.section-textarea {
+          .controls {
+            width: 35%;
+            float: left;
+            
+            margin-bottom: 10px;
+            padding-right: 2%;
+            @include breakpoint(mx1320){
+              width: 45%;
+
+            }
+
+            @include breakpoint(mx1024){
+              width: 36%;
+
+            }
+
+            @include breakpoint(mx991){
+              width: 45%;
+
+            }
+
+            @include breakpoint(mx767){
+              width: 53%;
+
+            }
+
+            @include breakpoint(mx640){
+              width: 71%;
+
+            }
+
+
+
+
+            @include breakpoint(mx480){
+              width: 100%;
+
+            }
+
+
+
+
+
+
+          }
+          .explain {
+            width: 100%;
+            float: left;
+            font-size: 12px;
+            line-height: 16px;
+            color: #606060;
+            text-transform:uppercase;
+            font-weight: lighter;
+          }
+          .wp-picker-input-wrap
+          {
+            position: absolute;
+            z-index: 10; 
+          }
+          .wp-picker-holder
+          {
+            position: absolute;
+            z-index: 10;
+          }
+
+
+
+
+        }
+
+        
+
+        .section.section-images {
+          .controls {
+            width: 100%;
+            float: left;
+            
+            margin-bottom: 10px;
+            padding-right: 2%;
+          }
+          .explain {
+            width: 100%;
+            float: left;
+            font-size: 12px;
+            line-height: 16px;
+            color: #606060;
+            text-transform:uppercase;
+            font-weight: lighter;
+          }
+          .wp-picker-input-wrap
+          {
+            position: absolute;
+            z-index: 10; 
+          }
+          .wp-picker-holder
+          {
+            position: absolute;
+            z-index: 10;
+          }
+
+
+
+
+        }
+
+
+
+
+
+        .section.section-text {
+          .controls {
+            width: 35%;
+            float: left;
+            
+            margin-bottom: 10px;
+            padding-right: 2%;
+            @include breakpoint(mx1320){
+              width: 74%;
+
+            }
+
+
+            @include breakpoint(mx480){
+              width: 100%;
+
+            }
+
+
+          }
+          .explain {
+            width: 100%;
+            float: left;
+            font-size: 12px;
+            line-height: 16px;
+            color: #606060;
+            text-transform:uppercase;
+            font-weight: lighter;
+          }
+          .wp-picker-input-wrap
+          {
+            position: absolute;
+            z-index: 10; 
+          }
+          .wp-picker-holder
+          {
+            position: absolute;
+            z-index: 10;
+          }
+
+
+
+
+        }
+
+
+        .section.section-color {
+          .controls {
+            width: 35%;
+            float: left;
+            
+            margin-bottom: 10px;
+            padding-right: 2%;
+          }
+          .explain {
+            width: 100%;
+            float: left;
+            font-size: 12px;
+            line-height: 16px;
+            color: #606060;
+            text-transform:uppercase;
+            font-weight: lighter;
+          }
+          .wp-picker-input-wrap
+          {
+            position: absolute;
+            z-index: 10; 
+          }
+          .wp-picker-holder
+          {
+            position: absolute;
+            z-index: 10;
+          }
+
+
+
+
+        }
+
+
+        .general .section.section-color {
+          .controls {
+           width: 260px;
+            float: left;
+            
+            margin-bottom: 10px;
+            padding-right: 2%;
+          }
+          .wp-picker-container {
+            width: 100%;
+            }
+          .explain {
+            width: 100%;
+            float: left;
+            font-size: 12px;
+            line-height: 16px;
+            color: #606060;
+            text-transform:uppercase;
+            font-weight: lighter;
+          }
+          .wp-picker-input-wrap
+          {
+            position: absolute;
+            z-index: 10; 
+          }
+          .wp-picker-holder
+          {
+            position: absolute;
+            z-index: 10;
+          }
+
+
+
+
+        }
+
+        
+
+
+
+         .buttoncoloursettings .section.section-color {
+          .controls {
+           width: 260px;
+            float: left;
+            
+            margin-bottom: 10px;
+            padding-right: 2%;
+          }
+          .wp-picker-container {
+            width: 100%;
+            }
+          .explain {
+            width: 100%;
+            float: left;
+            font-size: 12px;
+            line-height: 16px;
+            color: #606060;
+            text-transform:uppercase;
+            font-weight: lighter;
+          }
+          .wp-picker-input-wrap
+          {
+            position: absolute;
+            z-index: 10; 
+          }
+          .wp-picker-holder
+          {
+            position: absolute;
+            z-index: 10;
+          }
+
+
+
+
+        }
+
+         .menulinksbghovercolour .section.section-color {
+          .controls {
+           width: 260px;
+            float: left;
+            
+            margin-bottom: 10px;
+            padding-right: 2%;
+          }
+          .wp-picker-container {
+            width: 100%;
+            }
+          .explain {
+            width: 100%;
+            float: left;
+            font-size: 12px;
+            line-height: 16px;
+            color: #606060;
+            text-transform:uppercase;
+            font-weight: lighter;
+          }
+          .wp-picker-input-wrap
+          {
+            position: absolute;
+            z-index: 10; 
+          }
+          .wp-picker-holder
+          {
+            position: absolute;
+            z-index: 10;
+          }
+
+
+
+
+        }
+
+
+
+
+        .footercoloursettings .section.section-color {
+          .controls {
+           width: 260px;
+            float: left;
+            
+            margin-bottom: 10px;
+            padding-right: 2%;
+          }
+          .wp-picker-container {
+            width: 100%;
+            }
+          .explain {
+            width: 100%;
+            float: left;
+            font-size: 12px;
+            line-height: 16px;
+            color: #606060;
+            text-transform:uppercase;
+            font-weight: lighter;
+          }
+          .wp-picker-input-wrap
+          {
+            position: absolute;
+            z-index: 10; 
+          }
+          .wp-picker-holder
+          {
+            position: absolute;
+            z-index: 10;
+          }
+
+
+
+
+        }
+
+
+        .globallinkcoloursettings .section.section-color {
+          .controls {
+           width: 260px;
+            float: left;
+            
+            margin-bottom: 10px;
+            padding-right: 2%;
+          }
+          .wp-picker-container {
+            width: 100%;
+            }
+          .explain {
+            width: 100%;
+            float: left;
+            font-size: 12px;
+            line-height: 16px;
+            color: #606060;
+            text-transform:uppercase;
+            font-weight: lighter;
+          }
+          .wp-picker-input-wrap
+          {
+            position: absolute;
+            z-index: 10; 
+          }
+          .wp-picker-holder
+          {
+            position: absolute;
+            z-index: 10;
+          }
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        .section-checkbox {
+          .controls {
+            width: 98%;
+          }
+          .explain {
+            max-width: 94%;
+          }
+        }
+        .controls {
+          input[type=text] {
+            width: 70%;
+            font-size: 12px;
+            font-weight: bold;
+            color: #606060;
+            border: 1px solid #555555;
+            padding:17px;
+            box-shadow:none;
+            @include breakpoint(mx480){
+              width: 100%;
+
+
+            }
+
+
+
+            &.wp-color-picker {
+              width: 82px;
+            }
+
+            
+          }
+          .button.button-small.wp-picker-clear
+          {
+
+           box-shadow: none;
+           border-radius:0px;
+           text-transform: uppercase;
+           background-color: #464d4b;
+           color: #fff;
+           padding: 15px 0px;
+           font-weight: bold;
+           font-size: 12px;
+           width: 80px;
+           height: 52px;
+         }
+
+         select, textarea {
+           
+          width: 100%;
+          border: 1px solid #555555;
+          box-shadow: none;
+          margin-right: 20px;
+        }
+      }
+      .section-radio label, .section-multicheck label {
+        float: left;
+        max-width: 90%;
+        line-height: 16px;
+        margin-bottom: 5px;
+        margin-right: 10px;
+        @include breakpoint(mx767){
+         line-height: 24px;
+       }
+
+     }
+     input {
+      &.checkbox, &.of-radio {
+        margin: 0 10px 5px 0;
+        float: left;
+        
+      }
+    }
+    .section-typography {
+      .controls, .explain {
+        float: none;
+        width: auto;
+      }
+    }
+    .controls {
+      select 
+      {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+      select::-ms-expand {
+        display: none;
+
+      }
+
+      .of-typography-size {
+       
+        float: left;
+
+        background:url(../images/select-arrow.jpg) no-repeat right center;
+        height: 52px;
+        width: 18%;
+        padding-left: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #606060;
+
+        @include breakpoint(mx991){
+          width: 50%;
+
+
+        }
+
+        @include breakpoint(mx480){
+          width: 100%;
+
+
+        }
+
+
+      }
+      .of-typography-unit {
+        width: 50px;
+        margin-left: 5px;
+        float: left;
+      }
+      .of-typography-face {
+        float: left;
+
+        background:url(../images/select-arrow.jpg) no-repeat right center;
+        height: 52px;
+        width: 22%;
+        padding-left: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #606060;
+        @include breakpoint(mx991){
+          width: 50%;
+
+
+        }
+        @include breakpoint(mx480){
+          width: 100%;
+
+
+        }
+      }
+      .of-typography-style {
+        float: left;
+
+        background:url(../images/select-arrow.jpg) no-repeat right center;
+        height: 52px;
+        width: 18%;
+        padding-left: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #606060;
+        @include breakpoint(mx991){
+          width: 50%;
+
+
+        }
+        @include breakpoint(mx480){
+          width: 100%;
+
+
+        }
+      }
+    }
+    .section-typography .wp-picker-container {
+      margin-top: 2px;
+      position:relative;
+
+      .wp-picker-input-wrap
+      {
+        position: absolute;
+        .wp-color-picker {
+          width: 80px;
+          height: 52px;
+          border: 1px solid #c8d7d4;
+        }
+
+
+      }
+      .wp-picker-holder
+      {
+        position: absolute;
+        z-index: 10;
+        top: 105px;
+
+
+      }
+    }
+    .of-background-properties {
+      clear: both;
+      margin-top: 18px;
+    }
+    .controls {
+      .of-background-repeat, .of-background-position, .of-background-attachment {
+        width: 125px;
+        margin-right: 5px;
+        float: left;
+      }
+    }
+    .section-background .wp-picker-container {
+      margin-bottom: 10px;
+    }
+
+
+
+    .stylingsettings .controls {
+      .of-radio-img-img {
+        
+        border: 3px solid #f9f9f9;
+        margin: 0 20px 20px 0;
+        display: none;
+        cursor: pointer;
+        float: left;
+      }
+      .of-radio-img-selected {
+        border: 3px solid #464d4b;
+      }
+      .of-radio-img-img:hover {
+        opacity: .8;
+      }
+      .of-border-width {
+        width: 80px;
+        float: left;
+      }
+      .of-border-style {
+        width: 120px;
+        float: left;
+      }
+    }
+
+
+
+
+    .section-images .controls {
+      .of-radio-img-img {
+        
+        border: 3px solid #f9f9f9;
+        margin: 0 10px 10px 0;
+        display: none;
+        cursor: pointer;
+        float: left;
+      }
+      .of-radio-img-selected {
+        border: 3px solid #464d4b;
+      }
+      .of-radio-img-img:hover {
+        opacity: .8;
+      }
+      .of-border-width {
+        width: 80px;
+        float: left;
+      }
+      .of-border-style {
+        width: 120px;
+        float: left;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .hide {
+      display: none;
+    }
+    .of-option-image {
+      max-width: 340px;
+      margin: 3px 0 18px 0;
+    }
+    .mini .controls select, .section .mini .controls {
+      width: 140px;
+    }
+    .mini {
+      .controls {
+
+        select.of-input
+        {
+          float: left;
+          background: url(../images/select-arrow.jpg) no-repeat right center;
+          height: 52px;
+          width: 100%;
+          padding-left: 20px;
+          font-size: 12px;
+          font-weight: bold;
+          color: #606060;
+        }
+        input {
+          
+         
+          border: 1px solid #c8d7d4;
+        }
+        min-width: 140px;
+        width: 140px;
+        display: inline-block;
+      }
+      .explain {
+        max-width: 74%;
+      }
+    }
+    .section-editor .explain {
+      max-width: 98%;
+      float: none;
+      margin-bottom: 5px;
+    }
+    .controls input.upload {
+      width: 56%;
+      border: 1px solid #555555;
+      box-shadow: none;
+      padding: 17px 20px;
+      margin:0px;
+       @include breakpoint(mx480){
+        width: 54%;
+
+       }
+
+    }
+    .upload-button,.save-button
+    {
+      border-radius: 0px;
+      text-transform: uppercase;
+      background-color:#93ba9e;
+      border:0px;
+      color: #fff;
+      padding: 12px 27px;
+      height: auto;
+      font-weight: bold;
+      font-size: 12px;
+      box-shadow: none;
+      margin-left: -3px;
+      width: 34%;
+      line-height: 28px;
+       &:hover{
+
+        background-color: rgba(147, 186, 158, 0.8);
+       
+
+
+      }
+      @include breakpoint(mx480){
+
+        width: 44%;
+
+
+
+      }
+
+
+
+
+    }
+
+
+    .remove-file
+    {
+      border-radius: 0px;
+      text-transform: uppercase;
+      background-color:#93ba9e;
+      border:0px;
+      color: #fff;
+      padding: 12px 27px;
+      height: auto;
+      font-weight: bold;
+      font-size: 12px;
+      box-shadow: none;
+      margin-left: -3px;
+      width: 34%;
+      line-height: 28px;
+     
+      &:hover{
+
+        background-color: rgba(147, 186, 158, 0.8);
+       
+
+
+      }
+
+      @include breakpoint(mx480){
+
+        width: 44%;
+
+
+
+      }
+
+    }
+
+
+
+
+    .screenshot {
+      float: left;
+      margin-left: 1px;
+      position: relative;
+      width: 206px;
+      margin-top: 3px;
+      img {
+        background: #fafafa;
+        border: 1px solid #c8d7d4;
+        border-style: solid;
+        border-width: 1px;
+        float: left;
+        max-width: 192px;
+        padding: 4px;
+        
+      }
+      .remove-image {
+
+        background: url("../images/ico-delete.png") no-repeat;
+        border: medium none;
+        bottom: 4px;
+        display: none;
+        float: left;
+        height: 16px;
+        padding: 0;
+        position: absolute;
+        right: -9px;
+        text-indent: -9999px;
+        width: 16px;
+        cursor: pointer;
+        top: 1px;
+      }
+      .no_image {
+        .file_link {
+          margin-left: 20px;
+        }
+        .remove-button {
+          bottom: 0px;
+        }
+      }
+    }
+    .reset-button {
+      float: left;
+      cursor: pointer;
+    }
+  }
+
+  #optionsframework-submit {
+    padding: 7px 10px;
+    border-top: 1px solid #ddd;
+    background-color: #f1f1f1;
+  }
+
+  #optionsframework {
+    .button-primary {
+      float: right;
+    }
+    .section:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  .options-menu {
+    width: 21%;
+    float: left;
+    display: block;
+    
+    color: #444;
+    
+    margin:0px;
+
+    @include breakpoint(mx1024){
+     display: none;
+
+   }
+
+   li{
+
+                     a{
+                      color: #555555;
+                      font-size: 14px;
+                      text-transform: uppercase;
+                      font-weight: bold;
+                      text-decoration: none;
+                      letter-spacing: 2px;
+                      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+                      padding: 20px 0px 20px 60px;
+                      display: block;
+                      background-size: 16px;
+                      outline: none;
+                      border: 0px;
+                      outline-color: none;
+                      box-shadow: none;
+                      -webkit-transition: all 0.2s ease;
+                      transition: all 0.2s ease;
+
+                      &:hover{
+                         padding: 20px 0px 20px 65px;
+                         color: #bcb184;
+                        
+                       }
+
+                      @include breakpoint(mx1320){
+                        font-size: 12px;
+                        background-size: 13px;
+                        padding: 12px 0px 12px 36px;
+
+                        &:hover{
+                       padding: 12px 0px 12px 38px;
+                         color: #bcb184;
+
+                        
+                       }
+                      }
+
+
+
+
+
+                      @include breakpoint(mx1199){
+
+                        padding: 10px 0px 10px 33px;
+                        background: url("../images/menu-icon.png") 11px 8px no-repeat;
+                        background-size: 13px;
+                        font-size: 10px;
+
+                        &:hover{
+                          padding: 10px 0px 10px 35px;
+                         color: #bcb184;
+
+                        
+                       }
+
+
+                      }
+                       
+
+                      &:focus{
+                       outline: none;
+                       border: 0px;
+                       outline-color: none;
+                       box-shadow: none;
+
+                     }
+                     
+
+                   }
+
+
+
+
+
+
+                         &.active  {
+
+                                            a{
+                                             letter-spacing: 2px;
+                                             color: #bcb184;
+                                             font-size: 14px;
+                                             text-transform: uppercase;
+                                             text-decoration: none;
+                                             font-weight: bold;
+                                             display: block;
+                                             outline: none;
+                                             border: none;
+                                             outline-color: none;
+                                             box-shadow: none;
+                                             @include breakpoint(mx1320){
+                                              font-size: 12px;
+                                              background-size: 13px;
+                                              padding: 12px 0px 12px 36px;
+
+                                            }
+
+                                            @include breakpoint(mx1199){
+                                              
+                                              padding: 10px 0px 10px 33px;
+                                              
+                                              background-size: 13px;
+                                              font-size: 10px;
+
+
+                                            }
+
+
+                                            &:focus{
+                                             outline: none;
+                                             border: 0px;
+                                             outline-color: none;
+                                             box-shadow: none;
+
+                                           }
+
+
+
+                                             }
+
+                                            &:before
+                                             {
+                                              color: #bcb184;
+
+                                             }
+                         
+                                    }
+
+
+
+
+
+
+
+
+
+
+               &.icon-grizzly_settings_general{
+                width: 97%;
+                
+                background-color: #fff;
+                
+                margin:0px;
+                font-family: 'grizzly' !important;
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-size: 32px;
+                position: relative;
+                 @include breakpoint(mx1320){
+                                              font-size: 18px;
+                  }
+
+                   @include breakpoint(mx1199){
+
+                    font-size: 14px;
+                  }
+
+                 &:before
+                 {
+                content: "\e905";
+                padding: 10px 10px 10px 20px;
+                position: absolute;
+
+                 @include breakpoint(mx1320){
+                 padding: 9px 10px 10px 14px;
+
+                 }
+
+                 @include breakpoint(mx1199){
+                  padding: 9px 10px 10px 15px;
+
+                 }
+
+
+
+                 }
+ 
+              }
+
+              &.icon-grizzly_settings_layout{
+                width: 97%;
+                
+                background-color: #fff;
+                
+                margin:0px;
+                font-family: 'grizzly' !important;
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-size: 32px;
+                position: relative;
+                @include breakpoint(mx1320){
+                                              font-size: 18px;
+                  }
+
+                   @include breakpoint(mx1199){
+
+                    font-size: 14px;
+                  }
+
+                 &:before
+                 {
+                content: "\e90a";
+                padding: 10px 10px 10px 20px;
+                position: absolute;
+                 @include breakpoint(mx1320){
+                   padding: 9px 10px 10px 14px;
+
+                 }
+
+                 @include breakpoint(mx1199){
+                 padding: 9px 10px 10px 15px;
+
+                 }
+                 }
+ 
+              }
+
+              &.icon-grizzly_settings_seo{
+                width: 97%;
+                
+                background-color: #fff;
+                
+                margin:0px;
+                font-family: 'grizzly' !important;
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-size: 32px;
+                position: relative;
+                @include breakpoint(mx1320){
+                                              font-size: 18px;
+                  }
+
+                   @include breakpoint(mx1199){
+
+                    font-size: 14px;
+                  }
+
+                 &:before
+                 {
+                content: "\e908";
+                padding: 10px 10px 10px 20px;
+                position: absolute;
+
+                 @include breakpoint(mx1320){
+                  padding: 9px 10px 10px 14px;
+
+                 }
+
+                 @include breakpoint(mx1199){
+                 padding: 9px 10px 10px 15px;
+
+                 }
+
+                 }
+ 
+              }
+
+              &.icon-grizzly_settings_typography{
+                width: 97%;
+                
+                background-color: #fff;
+                
+                margin:0px;
+                font-family: 'grizzly' !important;
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-size: 32px;
+                position: relative;
+                @include breakpoint(mx1320){
+                                              font-size: 18px;
+                  }
+
+                   @include breakpoint(mx1199){
+
+                    font-size: 14px;
+                  }
+
+                 &:before
+                 {
+                content: "\e90a";
+                padding: 10px 10px 10px 20px;
+                position: absolute;
+
+                 @include breakpoint(mx1320){
+                  padding: 9px 10px 10px 14px;
+
+                 }
+
+                 @include breakpoint(mx1199){
+                padding: 9px 10px 10px 15px;
+
+                 }
+
+                 }
+ 
+              }
+
+              &.icon-grizzly_settings_styling{
+                width: 97%;
+                
+                background-color: #fff;
+                
+                margin:0px;
+                font-family: 'grizzly' !important;
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-size: 32px;
+                position: relative;
+                @include breakpoint(mx1320){
+                                              font-size: 18px;
+                  }
+
+                   @include breakpoint(mx1199){
+
+                    font-size: 14px;
+                  }
+
+                 &:before
+                 {
+                content: "\e909";
+                padding: 10px 10px 10px 20px;
+                position: absolute;
+                 @include breakpoint(mx1320){
+
+                  padding: 9px 10px 10px 14px;
+
+                 }
+
+                 @include breakpoint(mx1199){
+                 padding: 9px 10px 10px 15px;
+
+                 }
+
+                 }
+ 
+              }
+
+              &.icon-grizzly_settings_post_and_pages{
+                width: 97%;
+                
+                background-color: #fff;
+                
+                margin:0px;
+                font-family: 'grizzly' !important;
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-size: 32px;
+                position: relative;
+                @include breakpoint(mx1320){
+                                              font-size: 18px;
+                  }
+
+                   @include breakpoint(mx1199){
+
+                    font-size: 14px;
+                  }
+
+                 &:before
+                 {
+                content: "\e907";
+                padding: 10px 10px 10px 20px;
+                position: absolute;
+                 @include breakpoint(mx1320){
+                 padding: 9px 10px 10px 14px;
+
+                 }
+
+                 @include breakpoint(mx1199){
+                  padding: 9px 10px 10px 15px;
+
+                 }
+                 }
+ 
+              }
+
+              &.icon-grizzly_settings_footer{
+                width: 97%;
+                
+                background-color: #fff;
+                
+                margin:0px;
+                font-family: 'grizzly' !important;
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-size: 32px;
+                position: relative;
+                @include breakpoint(mx1320){
+                                              font-size: 18px;
+                  }
+
+                   @include breakpoint(mx1199){
+
+                    font-size: 14px;
+                  }
+
+                 &:before
+                 {
+                content: "\e903";
+                padding: 10px 10px 10px 20px;
+                position: absolute;
+                 @include breakpoint(mx1320){
+                   padding: 9px 10px 10px 14px;
+
+                 }
+
+                 @include breakpoint(mx1199){
+                 padding: 9px 10px 10px 15px;
+
+                 }
+                 }
+ 
+              }
+
+              &.icon-grizzly_settings_galleries{
+                width: 97%;
+                
+                background-color: #fff;
+                
+                margin:0px;
+                font-family: 'grizzly' !important;
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-size: 32px;
+                position: relative;
+                @include breakpoint(mx1320){
+                                              font-size: 18px;
+                  }
+
+                   @include breakpoint(mx1199){
+
+                    font-size: 14px;
+                  }
+
+                 &:before
+                 {
+                content: "\e904";
+                padding: 10px 10px 10px 20px;
+                position: absolute;
+                 @include breakpoint(mx1320){
+                   padding: 9px 10px 10px 14px;
+
+                 }
+
+                 @include breakpoint(mx1199){
+                  padding: 9px 10px 10px 15px;
+
+                 }
+                 }
+ 
+              }
+
+              &.icon-grizzly_settings_testimonials{
+                width: 97%;
+                
+                background-color: #fff;
+                
+                margin:0px;
+                font-family: 'grizzly' !important;
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-size: 32px;
+                position: relative;
+                @include breakpoint(mx1320){
+                                              font-size: 18px;
+                  }
+
+                   @include breakpoint(mx1199){
+
+                    font-size: 14px;
+                  }
+
+                 &:before
+                 {
+                content: "\e90b";
+                padding: 11px 10px 10px 16px;
+                position: absolute;
+                 @include breakpoint(mx1320){
+                  padding: 9px 10px 10px 14px;
+
+                 }
+
+                 @include breakpoint(mx1199){
+                 padding: 9px 10px 10px 15px;
+
+                 }
+                 }
+ 
+              }
+
+               &.icon-grizzly_settings_contact_and_social{
+                width: 97%;
+                
+                background-color: #fff;
+                
+                margin:0px;
+                font-family: 'grizzly' !important;
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-size: 32px;
+                position: relative;
+                @include breakpoint(mx1320){
+                                              font-size: 18px;
+                  }
+
+                   @include breakpoint(mx1199){
+
+                    font-size: 14px;
+                  }
+
+                 &:before
+                 {
+                content: "\e901";
+                padding: 12px 10px 10px 20px;
+                position: absolute;
+                 @include breakpoint(mx1320){
+               padding: 9px 10px 10px 14px;
+
+                 }
+
+                 @include breakpoint(mx1199){
+                  padding: 9px 10px 10px 15px;
+
+                 }
+                 }
+ 
+              }
+
+              &.icon-grizzly_settings_custom_css{
+                width: 97%;
+                
+                background-color: #fff;
+                
+                margin:0px;
+                font-family: 'grizzly' !important;
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-size: 32px;
+                position: relative;
+                @include breakpoint(mx1320){
+                                              font-size: 18px;
+                  }
+
+                   @include breakpoint(mx1199){
+
+                    font-size: 14px;
+                  }
+
+                 &:before
+                 {
+                content: "\e902";
+                padding: 10px 10px 10px 20px;
+                position: absolute;
+                 @include breakpoint(mx1320){
+                 padding: 9px 10px 10px 14px;
+
+                 }
+
+                 @include breakpoint(mx1199){
+                  padding: 9px 10px 10px 15px;
+
+                 }
+                 }
+ 
+              }
+
+              &.icon-grizzly_settings_import_and_export{
+                width: 97%;
+                
+                background-color: #fff;
+                
+                margin:0px;
+                font-family: 'grizzly' !important;
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-size: 32px;
+                position: relative;
+                @include breakpoint(mx1320){
+                                              font-size: 18px;
+                  }
+
+                   @include breakpoint(mx1199){
+
+                    font-size: 14px;
+                  }
+
+                 &:before
+                 {
+                content: "\e906";
+                padding: 10px 10px 10px 20px;
+                position: absolute;
+                 @include breakpoint(mx1320){
+                 padding: 9px 10px 10px 14px;
+
+                 }
+
+                 @include breakpoint(mx1199){
+                  padding: 9px 10px 10px 15px;
+
+                 }
+                 }
+ 
+              }
+
+               &.icon-grizzly_settings_slider{
+                width: 97%;
+                
+                background-color: #fff;
+                
+                margin:0px;
+                font-family: 'grizzly' !important;
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-size: 32px;
+                position: relative;
+                @include breakpoint(mx1320){
+                                              font-size: 18px;
+                  }
+
+                   @include breakpoint(mx1199){
+
+                    font-size: 14px;
+                  }
+
+                 &:before
+                 {
+                content: "\e90a";
+               padding: 10px 10px 10px 20px;
+                position: absolute;
+                 @include breakpoint(mx1320){
+                 padding: 9px 10px 10px 14px;
+
+                 }
+
+                 @include breakpoint(mx1199){
+                  padding: 9px 10px 10px 15px;
+
+                 }
+                 }
+ 
+              }
+
+               &.icon-grizzly_theme_updater{
+                width: 97%;
+                
+                background-color: #fff;
+                
+                margin:0px;
+                font-family: 'grizzly' !important;
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-size: 26px;
+                position: relative;
+                // a
+                // {
+                //   padding: 17px 0px 20px 60px;
+                // }
+                @include breakpoint(mx1320){
+                  font-size: 18px;
+                }
+
+                   @include breakpoint(mx1199){
+
+                    font-size: 14px;
+                  }
+
+                 &:before
+                 {
+                 content: "\e900";
+                 padding: 13px 10px 10px 20px;
+                 position: absolute;
+                 @include breakpoint(mx1320){
+                 padding: 9px 10px 10px 14px;
+
+                 }
+
+                 @include breakpoint(mx1199){
+                  padding: 9px 10px 10px 15px;
+                  
+
+                 }
+                 }
+ 
+              }
+
+
+             
+
+
+
+
+
+
+
+
+
+           
+
+
+
+
+
+
+
+
+
+
+
+                       
+
+
+
+
+
+
+
+
+           }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+.postbox {
+  width: 77%;
+  float: right;
+  display: block;
+  padding: 10px;
+
+  @include breakpoint(mx1320){
+
+   width: 76%;
+   
+
+ }
+
+
+ @include breakpoint(mx1024){
+
+   width: 97%;
+   
+
+ }
+
+
+
+}
+
+.theme-settings-header {
+  
+  height: 100px;
+  background: white;
+  margin-bottom: 15px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .logo {
+    width: 20%;
+    height: 100%;
+   
+    float: left;
+
+@include breakpoint(mx1199){
+             width: 30%; 
+
+            }
+
+             @include breakpoint(mx767){
+              width: 33%;
+
+            }
+
+             @include breakpoint(mx480){
+              width: 54%;
+
+            }
+
+              @include breakpoint(mx320){
+              margin-top: 20px;
+
+            }
+
+
+
+
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .info {
+    width: 78%;
+    display: block;
+    height: auto;
+    float: right;
+    padding-top: 15px;
+
+    @include breakpoint(mx1199){
+             width: 70%; 
+
+            }
+
+             @include breakpoint(mx767){
+              width: 66%;
+
+            }
+            @include breakpoint(mx480){
+              width: 46%;
+
+            }
+
+    
+
+    p{
+
+
+      color: #606060;
+      font-size: 12px; 
+      text-transform: uppercase;
+      font-weight:bold;
+      margin:4px 0px;
+    }
+  }
+}
+#optionsframework-submit {
+  margin-top: 0px;
+}
+
+
+.section-color
+{
+
+  .wp-picker-container
+  {
+    width: 56%;
+  }
+  .wp-color-result
+  {
+    width: 66%;
+    border-radius: 0px;
+    background-color: #fff;
+    border: 1px solid #c8d7d4;
+    box-shadow:none;
+    height: 50px;
+    padding-left: 50px;
+
+  }
+
+}
+
+
+.section-typography
+{
+
+
+  .wp-picker-container
+  {
+    width: 18%;
+
+    @include breakpoint(mx1320){
+      width: 25%;
+    }
+
+    @include breakpoint(mx991){
+     width: 30%; 
+
+   }
+
+   @include breakpoint(mx480){
+    width: 50%;
+
+  }
+
+
+}
+.wp-color-result
+{
+  width: 77%;
+  border-radius: 0px;
+  background-color: #fff;
+  border: 1px solid #c8d7d4;
+  box-shadow:none;
+  height: 50px;
+  padding-left: 50px;
+
+}
+
+
+
+}
+
+
+
+
+
+
+a.wp-color-result:after
+{
+
+  background-color: #93ba9e;
+  color:#fff;
+  text-transform: uppercase;
+  padding: 15px 0px;
+  font-weight: bold;
+  font-size: 12px;
+  box-shadow: none;
+  border-left:1px solid #c8d7d4;
+  top:-1px;
+  border-radius:0px;
+  
+
+}
+a:hover.wp-color-result:after
+{
+background-color: rgba(147, 186, 158, 0.8);
+
+}
+
+
+}
+
+#adminmenu .menu-icon-testimonials div.wp-menu-image:before {
+  content: "\f122"; 
+}
+#adminmenu .menu-icon-gallery div.wp-menu-image:before {
+  content: "\f161"; 
+}
+#adminmenu .menu-icon-badges div.wp-menu-image:before {
+  content: "\f236"; 
+}
+.gallery-images{
+  li{ 
+ 
+    // width: 100px;
+    // height: 100px;
+    // display: inline !important;
+    &:first-child{
+      display: none !important;
+    }
+  }
+  .gallery-metabox-sortable-placeholder{
+    background-color:red;
+    width:126px;
+    height: 126px;
+  }
+}
+

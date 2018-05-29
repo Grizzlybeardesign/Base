@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'grizzly';
+  src:  url('../fonts/grizzly.eot?yu6xyl');
+  src:  url('../fonts/grizzly.eot?yu6xyl#iefix') format('embedded-opentype'),
+    url('../fonts/grizzly.ttf?yu6xyl') format('truetype'),
+    url('../fonts/grizzly.woff?yu6xyl') format('woff'),
+    url('../fonts/grizzly.svg?yu6xyl#grizzly') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.icon-social:before {
+  content: "\e900";
+}
+.icon-customCSS:before {
+  content: "\e901";
+}
+.icon-footer:before {
+  content: "\e902";
+}
+.icon-gallery:before {
+  content: "\e903";
+}
+.icon-general:before {
+  content: "\e904";
+}
+.icon-import:before {
+  content: "\e905";
+}
+.icon-post:before {
+  content: "\e906";
+}
+.icon-seo:before {
+  content: "\e907";
+}
+.icon-styling:before {
+  content: "\e908";
+}
+.icon-testimonials:before {
+  content: "\e909";
+}
+.icon-typography:before {
+  content: "\e90a";
+}

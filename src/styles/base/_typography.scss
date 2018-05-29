@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Vincentia';
+    src: url('../fonts/Vincentia.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nexa';
+    src: url('../fonts/Nexa-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nexa';
+    src: url('../fonts/Nexa-Regular-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+$primaryfont    : Nexa, Arial, sans-serif;
+$secondaryfont  : "Vincentia", "Georgia", serif;
+
+@mixin typography--primary {
+  color: $font-color--primary;
+  font-family: $font-family--primary;
+  font-size: $font-size--primary;
+  line-height: $line-height--primary;
+  white-space: normal;
+}
+
+@mixin typography--secondary {
+  color: $font-color--secondary;
+  font-family: $font-family--secondary;
+  line-height: $line-height--secondary;
+  font-weight: normal;
+  margin-bottom: $spacing--primary;
+}
+
+:root {
+  @include typography--primary;
+  font-size: $font-size--primary - 2px;
+
+  @include bp(medium) {
+    font-size: $font-size--primary - 1px;
+  }
+
+  @include bp(large) {
+    font-size: $font-size--primary;
+  }
+}
+
+#{$header-tags},
+#{$content-tags} {
+  margin: 0 0 $spacing--primary;
+}
+
+#{$content-tags},
+#{$form-tags},
+label {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  white-space: inherit;
+}
+
+.heading,
+h1:not([class]) {
+  font-size: rem(24px);
+}
+p {
+    font-family: $font-family--secondary;
+    font-weight:400;
+}
+.subheading,
+h2:not([class]) {
+  font-size: rem(20px);
+}
+
+.subsubheading,
+h3:not([class]) {
+  font-size: rem(16px);
+}
+
+p:not([class]) {
+  margin-bottom: $spacing--secondary;
+}
+
+a[href]:hover {
+  color: $color--darker-grey;
+}
+
+ul:not([class]) {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+strong {
+  font-weight: 700;
+}
+
+i,em {
+  font-style: italic;
+}

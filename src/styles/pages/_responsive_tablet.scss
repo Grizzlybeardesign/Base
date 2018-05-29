@@ -1,0 +1,528 @@
+/*
+A. CUSTOM SETTINGS
+1. TYPOGRAPHY
+2. HEADER
+3. NAVIGATION
+4. SLIDERS
+5. FOOTER 
+6. COPYRIGHT
+7. PAGE SPECIFIC
+    7.1 HOME
+    7.2 ABOUT
+    7.3 PRICING
+    7.4 FEATURED WEDDINGS
+8. BLOG
+8.1 BLOG SINGLE
+8.2 BLOG ARCHIVE
+9. CONTACT
+10. PLUGINS
+11. HOVER EFFECTS
+12. COMMON STYLE / BORDERS
+*/
+
+
+
+@media (max-width: 991px) {
+  .logo {
+    display: inline-block;
+  }
+  .image {
+    position: relative;
+    display: none;
+    float: none;
+    clear: none;
+  }
+  .heading {
+    margin-top: 40px;
+    font-size: 50px;
+    line-height: 35px;
+  }
+  .section {
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+  .section.content {
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+  .section.contact {
+    padding-top: 25px;
+    padding-bottom: 40px;
+  }
+  .section.testimonials {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .image-3 {
+    top: 5px;
+    width: 300px;
+  }
+  .image-4 {
+    width: 300px;
+  }
+  .line {
+    width: 300px;
+  }
+  .section-7 {
+    padding-top: 40px;
+  }
+  .heading-5 {
+    font-size: 50px;
+  }
+  .section-8 {
+    padding-bottom: 40px;
+  }
+  .section-10 {
+    padding-bottom: 40px;
+  }
+  .image-29 {
+    margin-top: 0px;
+  }
+  .section-12 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .content.about {
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+  .heading-bdr {
+    width: 300px;
+    margin-bottom: 40px;
+  }
+  .section-14 {
+    padding-bottom: 20px;
+  }
+  .section-14.gallery {
+    padding-bottom: 40px;
+  }
+  .cta-line {
+    margin-bottom: 40px;
+  }
+  .about-2 {
+    margin-bottom: 40px;
+  }
+  .recent-work-about {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .brand {
+    display: inline-block;
+  }
+  .image-49 {
+    position: relative;
+    display: inline-block;
+    max-height: 40px;
+    margin: 10px 0px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    float: left;
+  }
+  .nav-menu {
+    display: inline-block;
+    float: right;
+    clear: none;
+  }
+  .menu-button {
+    clear: none;
+  }
+  .menu-button-2 {
+    position: relative;
+    left: 0px;
+    display: block;
+    float: right;
+  }
+  .container-13 {
+    position: relative;
+  }
+  .nav-link-responsive {
+    margin-right: 15px;
+    margin-left: 20px;
+    padding: 10px;
+    border-bottom: 1px solid $white;
+    font-family: $primaryfont;
+    color: $primarycolor;
+    text-transform: uppercase;
+  }
+  .nav-menu-2 {
+    padding-bottom: 15px;
+  }
+  .navbar-2 {
+    background-color: $whitesmoke;
+  }
+}
+
+
+@media screen and (max-width: 80.063em) {
+    .blog, .archive{
+        #content{
+            .blog-entry{
+                .entry-content{
+                    padding:5px 0;
+                }
+            }
+        }
+    }
+    .single{
+        #content{
+            .date{
+                margin-left:0;
+            }
+        }
+    }
+}
+@media screen and (max-width: 64.063em) {
+    /**
+     * 
+     * A. CUSTOM SETTINGS
+     * ----------------------------------------------------------------------------
+     */
+    a.contact{
+        font-size:90%;
+    }
+    #banner{
+        position:relative;
+        background-size: cover;
+        min-height: 400px;
+        .titleholder{
+            bottom: 0;
+            height:auto;
+            h1 {
+                font-size:140%;
+            }
+            p {
+                font-size: 120%;
+                line-height: 28px;
+            }
+        }
+    }
+    #page-links{
+        padding-bottom:30px;
+    }
+    #testimonials{
+        .wrap{
+            h5{
+                margin-left:10px;
+            }
+            blockquote{
+                margin-left:0;
+                p, span{
+                    margin-left:10px;
+                }
+            }
+            blockquote:before{
+                margin-left:-20px;
+            }
+        }
+        .large-6:nth-child(1){
+            display:none;
+        }
+    }
+    /**
+ * 1. TYPOGRAPHY
+ * ----------------------------------------------------------------------------
+ */ 
+    h1{
+        font-size:100%;
+    }
+    h1.title {
+        font-size:140%;
+    }
+    h2, h3.blog, h5{
+        font-size:100%;
+    }
+    h3 {
+        font-size:185%;
+    }
+    h4 {
+        font-size:100%;
+    }
+    p {
+        line-height:26px;
+        font-size:95%;
+    }
+    /**
+     * 2. HEADER
+     * ----------------------------------------------------------------------------
+     */
+
+    /**
+     * 3. NAVIGATION
+     * ----------------------------------------------------------------------------
+     */
+    .page-template-home{
+        #masthead-mobile{
+            border-bottom:5px solid $primarycolor;
+        }
+    }
+    #masthead-mobile{
+        background:$primarycolor;
+        #mobile-logo{
+            img{
+                max-width:135px;
+                padding:12px 0 10px;
+                margin: 0 auto;
+                display:block;
+            }
+        }
+        #menu-mobile-menu{
+            li{
+                font-family: 'SuperGroteskC-Med', Arial, sans-serif;
+                text-transform:uppercase;
+                font-size:95%;
+            }
+        }
+    }
+    header#header {
+        #pageHeader{
+            display:none;
+        }
+    }
+    /**
+     * 4. SLIDERS
+     * ----------------------------------------------------------------------------
+     */
+
+    /**
+     * 5. FOOTER 
+     * ------------------------------------
+     */
+    footer#footer{
+        padding:30px 0;
+        .wrap{
+            padding-top:15px;
+            padding-bottom:0;
+            .menu-footer-menu-container{
+                ul.nav-menu{
+                    li{
+                        float:none;
+                        margin:0!important;
+                        font-size:95%;
+                    }
+                }
+            }
+            ul.social{
+                margin-top:15px;
+                li {
+                    margin: 0 4px;
+                    a{
+                        i{
+                            height:25px;
+                            width:25px;
+                            line-height:25px;
+                        }
+                    }
+                }
+            }
+        }
+        p{
+            word-break:break-all;
+            font-size:80%;
+        }
+    }
+    /**
+     * 6. COPYRIGHT
+     * ------------------------------------
+     */
+
+    /** 7. PAGE SPECIFIC
+     * ------------------------------------ */
+
+
+    /**
+     *  7.1 HOME
+     * ------------------------------------
+     */
+    .page-template-home{
+        #content{
+            .first p:nth-child(1):after, .last p:nth-child(1):after{
+                display:none;
+            }
+            .first{
+                p:nth-child(1){
+                    font-size:95%;
+                }
+            }
+            .wrap{
+                padding-top:15px;
+                .blue-circle{
+                    display:none;
+                }
+                h2:nth-child(1), h2.last{
+                    width:100%;
+                    text-align:center;
+                    margin-bottom:15px;
+                    line-height:24px;
+                    padding:0;
+                }
+            }
+        }
+    }
+    /**
+     *  7.2 ABOUT
+     * ------------------------------------
+     */
+    .page-template-about{
+        #banner{
+            .large-12{
+                padding:0 30px;
+                border:0;
+                h1{
+                    font-size:140%;
+                }
+                .align{
+                    top: 50%;
+                    @include translate(-50%, -50%);
+                }
+            }
+            .holder {
+                display:none;
+            }
+        }
+        #content{
+            .last-row{
+                .andrew{
+                    display:none;
+                }
+                .columns, .first{
+                    padding-left:15px;
+                    padding-right:15px;
+                }
+            }
+        }
+    }
+    /**
+     *  7.3 PRICING
+     * ------------------------------------
+     */
+    .page-template-pricing{
+        #content{
+            p,li, .last p{
+                text-align:left;
+            }
+            .first p, .last p{
+                font-size:95%;
+            }
+        }
+        #prices{
+            padding: 0 0 30px;
+        }
+    }
+    /**
+     *  7.4 FEATURED WEDDINGS
+     * ------------------------------------
+     */
+
+    /**
+     *  8. BLOG
+     * ------------------------------------
+     */
+    #blog-feed{
+        padding-bottom:30px;
+        .wrap{
+            .align {
+                text-align:center;
+            }
+            h4{
+                line-height:26px;
+            }
+        }
+    }
+    .blog, .archive{
+        #content{
+            .blog-entry{
+                .entry-content{
+                    padding:5px 15px;
+                    .date{
+                        margin-bottom:20px;
+                    }
+                    h2{
+                        font-size:95%;
+                        margin-bottom:20px;
+                    }
+                }
+            }
+        }
+    }
+    /**
+     *  8.1 BLOG SINGLE
+     * ------------------------------------
+     */
+
+    /**
+     *  8.2 BLOG ARCHIVE
+     * ------------------------------------
+     */
+
+    /**
+     *  9. CONTACT
+     * ------------------------------------
+     */
+    .page-template-contact{
+        #content{
+            .medium-6{
+                text-align:center;
+            }
+            .last{
+                text-align:center;
+            }
+            .middle{
+                margin-bottom:20px;
+            }
+        }
+    }
+    /**
+     * 10. PLUGINS
+     * ------------------------------------
+     */
+
+    /**
+     * 11. HOVER EFFECTS
+     * ------------------------------------
+     */
+    /*--Gallery Hover--*/
+    figure.effect-ab {
+        h3{
+            font-size:120%
+        }
+    }
+    /*--Home Hover--*/
+    figure.effect-andrew .wrap{
+        left:15px;
+        right:15px;
+        bottom:15px;
+        top:15px;
+    }
+    figure.effect-andrew h3{
+        margin:0;
+    }
+    figure.effect-andrew h3.first{
+        left: 50%;
+        top: 50%;
+        @include translate(-50%, -50%);
+    }
+    figure.effect-andrew h3.last{
+        right: 50%;
+        top: 50%;
+        @include translate(-50%, -50%);
+    }
+    /**
+     * 12. COMMON STYLE / BORDERS
+     * ------------------------------------
+     */
+
+    input[type="email"], input[type="text"], input[type="button"], textarea {
+        font-size:80%!important;
+        background:#edeeef;
+        box-shadow:none;
+        border:none;
+        width:100%;
+        color:black;
+        margin-bottom:5px;
+        padding:10px!important;
+        @include transition(all, 0.5s, ease-in-out);   
+    }
+    .gform_wrapper form fieldset ul li textarea.large {
+        height: 82.5px !important;
+    }
+}

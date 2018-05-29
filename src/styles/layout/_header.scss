@@ -1,0 +1,49 @@
+#header {
+    position: fixed;
+    top:0;
+    width:100%;
+    margin-bottom: 1px;
+    z-index:1000;
+}
+.navbar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    z-index: 3000;
+    width: 100%;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-image: -webkit-linear-gradient(270deg, rgba(242, 246, 249, .9), rgba(242, 246, 249, .9)), -webkit-linear-gradient(270deg, rgba(242, 246, 249, .9), rgba(242, 246, 249, .9));
+    background-image: linear-gradient(180deg, rgba(242, 246, 249, .9), rgba(242, 246, 249, .9)), linear-gradient(180deg, rgba(242, 246, 249, .9), rgba(242, 246, 249, .9));
+    color: $lighterblue;
+    .nav-brand {
+        color: $primarycolor;
+        float: left;
+        position: relative;
+        text-decoration: none;
+    }
+    .nav-menu {
+        float: right;
+        position: relative;
+        ul {
+            li {
+                float:left;
+                a {
+                    bottom: 2px;
+                    display: inline-block;
+                    padding-top: 25px;
+                    padding-right: 20px;
+                    padding-bottom: 25px;
+                    font-family:$primaryfont;
+                    text-align: left;
+                    text-transform: uppercase;
+                    &:hover {
+                        color: $lighterblue;
+                    }
+                }
+            }
+        }
+    }
+}

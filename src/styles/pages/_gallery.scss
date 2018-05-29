@@ -1,0 +1,106 @@
+/* PORTFOLIO */
+#recent-portfolio {
+    position: relative;
+    background: $whitesmoke;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    .container {
+        position: relative;
+    }
+    img{
+        height:100%;
+    }
+    .heading-2 {
+        margin:0 auto;
+        top:-30px;
+        position: relative;
+        left: 0px;
+        right: 0px;
+        z-index: 10;
+        width: 300px;
+        background-color: $whitesmoke;
+        font-family: $secondaryfont;
+        color: $primarycolor;
+        font-size: 65px;
+        line-height: 44px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .button-2{
+        bottom:-20px;
+    }
+    .bdr{
+        @include abs-pos(0, -45px, 0, -45px);
+        border:1px solid $primarycolor;
+    }
+}
+/* HOVER EFFECT */
+figure  {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    img {
+        position: relative;
+        display: block;
+        height: auto;
+        max-width: 100%;
+        opacity: 1;
+    }
+    figcaption {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        margin-top:0;
+        &:before, &:after {
+            pointer-events: none;
+        }
+    }
+}
+figure figcaption,
+figure figcaption > a {
+    @include abs-pos(0, auto, auto, 0);
+    width: 100%;
+    height: 100%;
+}
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    @include opacity(0);
+}
+figure img {
+    opacity: 1;
+    @include transition(opacity, 0.5s, ease-in-out);
+}
+figure:hover img {
+    @include opacity(0.5);
+}
+figure figcaption h3, figure figcaption h2 {
+    line-height:40px;
+    padding:0;
+    height:100%;
+    text-transform: capitalize;
+    opacity: 1;
+    margin:0;
+    @include transition(opacity, 0.5s, ease-in-out);
+    color: $white;
+    font-family: $secondaryfont;
+    font-size: 43px;
+    font-weight: 300;
+    text-align: center;
+    z-index: 1001;
+}
+figure figcaption h3 span.inn, figure figcaption h2 span.inn {
+    @include abs-pos(50%, auto, auto, auto);
+    @include translate(-50%, 0);
+    width: 100%;
+    margin-top:-15px;
+}
+

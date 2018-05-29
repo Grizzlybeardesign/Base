@@ -1,0 +1,47 @@
+.pace {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    background-color: #333333;
+    border-bottom: 16px solid $secondarycolor;
+    box-sizing: border-box;
+    transition: 2s;
+    background-image: url("../images/png/white-logo-01-p-500.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    .pace-progress {
+        box-sizing: border-box;
+        transform: translate3d(0, 0, 0);
+        position: fixed;
+        z-index: 10000;
+        display: block;
+        position: absolute;
+        bottom: -16px;
+        left: 0;
+        height: 16px;
+        width: 100%;
+        background-color: $primarycolor;
+    }
+    &.pace-inactive {
+        display: none;
+    }
+}
+.pacehelper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9998;
+    background-color: $primarycolor;
+}
+
+/************************** MOBILE **************************/
+@media only screen and (max-width: 767px) {
+    .pace { 
+        background-size: 250px 67px;
+    }
+}

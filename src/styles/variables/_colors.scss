@@ -1,0 +1,23 @@
+/**
+ * Custom color scheme
+ * ----------------------------------------------------------------------------
+ */
+
+$white:             #FFFFFF;
+$black:             #000000; /* Black */
+$secondarycolor:    #646E8C; /* Slate Grey */
+$primarycolor:      #2e3655; /* Dark Blue */
+$whitesmoke:        #f2f6f9; /* White Smoke */
+$lighterblue:       #c0d0ed; /* Light Steel Blue */
+
+/* PRIMARY BUTTON COLORS */
+$button--primary__bg-color:                 $lighterblue;
+$button--primary__bg-hover-color:            $primarycolor;
+$buttoncolor:                   $secondarycolor;
+$buttonhovercolor:              $white;
+
+/* SECONDARY BUTTON COLORS */
+$secondarybuttonbgcolor:        $secondarycolor ;
+$secondarybuttonbghovercolor:   $lighterblue;
+$secondarybuttoncolor:          $white;
+$secondarybuttonhovercolor:     $secondarycolor;

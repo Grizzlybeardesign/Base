@@ -1,0 +1,30 @@
+.gototop {
+    @include opacity(0);
+    @include transition(all, 0.5s, ease-in-out);
+    background-color: $primarycolor;
+    @include border-radius(3px);
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    right: 15px;
+    bottom:15px;
+    z-index: 999999;
+    text-transform:uppercase; 
+    height:50px;
+    width:50px;
+    font-size:28px;
+    color:$white;      
+    font-weight: normal;
+    div {
+        img {
+            display:block;
+            margin:0 auto;
+        }
+    }
+    &:hover {
+        background:$secondarycolor;
+    }
+}
+.show {
+    opacity:1 !important;
+}

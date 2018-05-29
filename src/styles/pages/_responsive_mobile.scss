@@ -1,0 +1,536 @@
+/*
+A. CUSTOM SETTINGS
+1. TYPOGRAPHY
+2. HEADER
+3. NAVIGATION
+4. SLIDERS
+5. FOOTER 
+6. COPYRIGHT
+7. PAGE SPECIFIC
+    7.1 HOME
+    7.2 ABOUT
+    7.3 PRICING
+    7.4 FEATURED WEDDINGS
+8. BLOG
+8.1 BLOG SINGLE
+8.2 BLOG ARCHIVE
+9. CONTACT
+10. PLUGINS
+11. HOVER EFFECTS
+12. COMMON STYLE / BORDERS
+*/
+@media screen and (max-width: 58em) {
+    .page-template-pricing{
+        #prices{
+            .price-option{
+                width:98%;
+                margin-bottom:15px;
+                min-height:200px;
+                p.price{
+                    margin-bottom:15px;
+                }
+                .bottom{
+                    position:relative;
+                    bottom:0;
+                }
+            }
+        }
+    }
+    .blog, .archive{
+        #content{
+            .blog-entry{
+                .entry-content{
+                    .date{
+                    }
+                    h2{
+                        font-size:85%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 55em) {
+    .blog, .archive{
+        #content{
+            .blog-entry{
+                .medium-6{
+                    width:100%;
+                    text-align:center;
+                    .entry-content{
+                        .date{
+                            padding-top:20px;
+                        }
+                    }
+                }
+                a.blog{
+                    float:none;
+                    span{
+                        padding: 12px 22px;
+                    }
+                }
+            }
+            .blog-entry::after{
+                margin:0 auto 30px;
+                padding-top:30px;
+            }            
+        }
+    }
+}
+@media screen and (max-width: 49em) {
+    .page-template-pricing{
+        #prices{
+            .album{
+                margin-top:0;
+                .price-option{
+                    .wrap{
+                        display:inline-block;
+                        width:100%;
+                        p{
+                            display:inline;
+                            float:left;
+                        }
+                        p.hours{
+                            font-size:100%;
+                            margin-right:10px;
+                        }
+                        p.price{
+                            float:right!important;
+                        }
+                    }
+                    p{
+                        margin-bottom:5px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 40em) {
+    /**
+     * 
+     * A. CUSTOM SETTINGS
+     * ----------------------------------------------------------------------------
+     */
+    .colPadRight45 {
+        padding-right:15px;
+    }
+    .colPadLeft45 {
+        padding-left:15px;
+    }    
+    a.contact {
+        font-size: 85%;
+    }
+    #banner{
+        min-height:230px;
+        .titleholder{
+            display:none;
+        }
+    }
+    #page-links {
+        padding-bottom: 15px;
+    }
+    
+    /**
+ * 1. TYPOGRAPHY
+ * ----------------------------------------------------------------------------
+ */
+    #intro {
+        padding:40px 15px;
+    }
+    h1 {
+        font-size:100%;
+    }
+    h1.title{
+        font-size:115%;
+    }
+    h2 {
+        font-size:100%;
+    }
+    p {
+        line-height:24px;
+        font-size:90%;
+    }
+    #content {
+        .entry-content {
+            ul {
+                li {
+                    line-height:24px;
+                    font-size:90%;
+                }
+            }
+        }
+    }
+    /**
+     * 2. HEADER
+     * ----------------------------------------------------------------------------
+     */
+
+    /**
+     * 3. NAVIGATION
+     * ----------------------------------------------------------------------------
+     */
+    #nav {display: none!important;}
+    #masthead-mobile{
+        #menu-mobile-menu{
+            li{
+                font-size:85%;
+            }
+        }
+    }
+    /**
+     * 4. SLIDERS
+     * ----------------------------------------------------------------------------
+     */
+
+    /**
+     * 5. FOOTER 
+     * ------------------------------------
+     */
+    footer#contact{
+        p{
+            text-align:center;
+        }
+        .small-12 {
+            float:none;
+        }
+        a {
+            text-align:center;
+            float:none;
+            width:150px;
+            margin:15px auto 0;
+            display:block;
+        }
+    }
+    footer#footer{
+        background:url('../img/footer-BG-light-mobile.jpg') no-repeat center center;
+        padding:20px 0;
+        .wrap{
+            padding-top:0;
+            padding-bottom:0;
+            .menu-footer-menu-container{
+                ul.nav-menu{
+                    max-width:100%;
+                    text-align:center;
+                    li{
+                        font-size:85%;
+                        line-height:22px;
+                    }
+                }
+            }
+            ul.social{
+                float:none;
+                margin-top:15px;
+            }
+        }
+        p{
+            word-break:break-all;
+            font-size:75%;
+            display:block;
+            float:none;
+            text-align:center;
+        }
+    }
+    /**
+     * 6. COPYRIGHT
+     * ------------------------------------
+     */
+    footer#copyright{
+        ul{
+            li{
+                font-size:70%;
+            }
+        }
+    }
+
+
+    /** 7. PAGE SPECIFIC
+     * ------------------------------------ */
+
+    /**
+     *  7.1 HOME
+     * ------------------------------------
+     */
+    .page-template-home{
+        #content{
+            .first{
+                p:nth-child(1){
+                    font-size:85%;
+                }
+            }
+        }
+        #awards {
+            margin-bottom:0;
+            h2:nth-child(1), h2.last{
+                width:100%;
+                text-align:center;
+                padding-top:0;
+            }
+            .blue-circle {
+                width:100%;
+            }
+            .blue-circle::after {
+                display:none;
+            }
+        }
+    }
+    /**
+     *  7.2 ABOUT
+     * ------------------------------------
+     */
+    .page-template-about{
+        #banner{
+            padding:20px 0 45px;
+            .large-12{
+                padding:0;
+                border:0;
+                h1{
+                    font-size:100%;
+                }
+                img{
+                    display:none;
+                }
+                .align{
+                    left: 0;
+                    position: relative;
+                    top: 0;
+                    transform: none;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    /**
+     *  7.3 PRICING
+     * ------------------------------------
+     */
+    .page-template-pricing{
+        #prices {
+            padding: 0 15px;
+            .price-option {
+                margin:0 auto 15px;
+                width:100%;
+            }
+            .album {
+                .price-option {
+                    margin:0 auto 15px;
+                    width:100%;
+                }
+            }
+        }
+        #content{
+            .first p, .last p{
+                font-size:85%;
+            }
+        }
+        #prices{
+            .album{
+                .price-option{
+                    .img, .content{
+                        width:100%;
+                    }
+                    .img{
+                        padding: 25px 20px 0;
+                    }
+                    .fullheight{
+                        display:none;
+                    }
+                    .border{
+                        @include abs-pos(25px, 20px, 25px, 20px);
+                        border: 1px solid $white;
+                        pointer-events: none;
+                        display:block;
+                    }
+                }
+            }
+        }
+    }
+    /**
+     *  7.4 FEATURED WEDDINGS
+     * ------------------------------------
+     */
+    .page-template-featured_weddings{
+        .gallery-masonry-wrap {
+            .row {
+                .masonry-item {
+                    width:100%;
+                }
+                .grid-sizer {
+                    width:100%;
+                }
+            }
+        }
+    }
+    /**
+     *  8. BLOG
+     * ------------------------------------
+     */
+    #category-list {
+        float:none;
+        width:100%;
+        .select2-container {
+            display:block;
+            margin:0 auto;
+        }
+    }
+    #blog-feed{
+        padding-bottom:30px;
+        figure.effect-andrew {
+            margin-bottom: 0;
+        }
+        .slick-dots {
+            width:100%;
+            padding:30px 45px 0;
+            display:inline-block;
+            text-align:center;
+        }
+        .slick-dots li
+        {
+            position: relative;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
+            padding: 0;
+            cursor: pointer;
+        }
+        .slick-dots li button
+        {
+            font-size: 0;
+            line-height: 0;
+            display: block;
+            width: 20px;
+            height: 20px;
+            padding: 5px;
+            cursor: pointer;
+            color: transparent;
+            border: 0;
+            outline: none;
+            background: transparent;
+        }
+        .slick-dots li button:hover,
+            .slick-dots li button:focus
+            {
+            outline: none;
+        }
+        .slick-dots li button:hover:before,
+            .slick-dots li button:focus:before
+            {
+            opacity: 1;
+        }
+        .slick-dots li button:before
+            {
+            font-family: 'slick';
+            font-size: 40px;
+            line-height: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            content: "•";
+            text-align: center;
+            opacity: .25;
+            color: $primarycolor;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .slick-dots li.slick-active button:before
+            {
+            opacity: .75;
+            color: $secondarycolor;
+        }
+    }
+    /**
+     *  8.1 BLOG SINGLE
+     * ------------------------------------
+     */
+    .single-post {
+        #content {
+            .date {
+                float:none;
+                display:block;
+                margin: 0 auto 20px;
+            }
+            h1 {
+                float:none;
+                line-height:normal;
+                text-align:center;
+                margin-bottom:15px;
+            }
+            .entry-share {
+                float:none;
+                padding:0;
+                margin-bottom:15px;
+                p {
+                    display:none;
+                }
+                ul.social {
+                    float:none;
+                    display:inline-block;
+                    margin:0 auto;
+                    width:100%;
+                    text-align:center;
+                    li {
+                        display:inline-block;
+                        a {
+                            i.fa-twitter, i.fa-facebook, i.fa-google-plus {
+                                padding:0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /**
+     *  8.2 BLOG ARCHIVE
+     * ------------------------------------
+     */
+
+    /**
+     *  9. CONTACT
+     * ------------------------------------
+     */
+    .page-template-contact{
+        #content{
+            .first{
+                margin-bottom:20px;
+            }
+        }
+    }
+    /**
+     * 10. PLUGINS
+     * ------------------------------------
+     */
+
+    /**
+     * 11. HOVER EFFECTS
+     * ------------------------------------
+     */
+    figure.effect-andrew{
+        margin-bottom:15px;
+    }
+    /**
+     * 12. COMMON STYLE / BORDERS
+     * ------------------------------------
+     */
+
+    div.gform_wrapper {
+        form{
+            fieldset, .fieldset.right-col{
+                float: none!important;
+                margin-right: 0!important;
+                width: 100%!important;
+                ul{
+                    li{
+                        padding-right:0!important;
+                    }
+                }
+            }
+            p, #content li{
+                line-height:0!important;
+            }
+        }
+    }
+}

@@ -1,0 +1,424 @@
+html, body {
+    height: 100%;
+}
+#preload {
+    display: none;
+}
+.cta-line{
+    height: 3px;
+    margin-bottom: 70px;
+    background-color: $lighterblue;    
+    margin-bottom:0;
+    .button {
+        position: relative;
+        display: block;
+        background-color: $secondarycolor;
+        padding:15px;
+        text-transform: uppercase;
+        top: -22.5px;
+    }
+}
+#blog-content figure img {
+    max-width:100%;
+    width:100%; 
+}
+
+img.alignright {
+    float: right;
+    margin: 0 0 18px 65px;
+}
+img.alignleft {
+    float: left;
+    margin: 0 18px 18px 0;
+}
+img.aligncenter {
+    display: block;
+    margin: 18px auto;
+}
+
+.gallery dt, .gallery dl {
+    display: inline-block;
+}
+.gallery dl {
+    margin-left: 0.5625rem;
+    margin-right: 0.5625rem;
+}
+
+figure.figure {
+    margin: 0 auto;
+    display: table;
+}
+figure.figure figcaption {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    font-style: italic;
+    padding: 8px 10px;
+    color: #999;
+    margin-bottom: 1.25rem;
+    display: table-caption;
+    caption-side: bottom;
+}
+
+figure.alignright.figure {
+    float: right;
+    margin: 0 0 18px 18px;
+}
+
+figure.alignleft.figure {
+    float: left;
+    margin: 0 18px 18px 0;
+}
+.inline-list {
+    margin:0 0 1.0625rem -2rem;
+}
+a:hover {
+    cursor: pointer;
+}
+html, body {
+    height:auto!important;
+}
+a.contact {
+    background:$primarycolor;
+    @include transition(all, 0.5s, ease-in-out);
+    border-bottom:3px solid $secondarycolor;
+    padding: 20px 23px 17px;
+    font-family: 'SuperGroteskC-Med', Arial, sans-serif;
+    color:$white;
+    text-transform:uppercase;
+    line-height:15px;
+    &:hover{
+        background:$secondarycolor;
+        border-bottom:3px solid $primarycolor;
+        color:$primarycolor;
+    }
+}
+#banner{
+    background-size: cover;
+    min-height: 550px;
+    position:relative;
+    .titleholder{
+        @include abs-pos(0, 0, 0, 0);
+        width:100%;
+        height:auto;
+        z-index: 9999;
+        p, h1{
+            color:$white;
+            text-align:left;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-size: 250%;
+            line-height: 44px;
+            text-transform:none;
+            margin-bottom:50px;
+        }
+    }
+}
+#intro {
+    padding:40px 0;
+    text-align:center;
+    h1{
+        color:$secondarycolor;
+        &:after{
+            border-bottom: 1px solid #5d6573;
+            border-color: #5d6573;
+            border-width: 1px;
+            content: "";
+            display: block;
+            height: 5px;
+            margin-left: 0;
+            padding-top: 20px;
+            margin-bottom:30px;
+            position: relative;
+            left:50%;
+            @include translate(-50%, 0);
+            width: 30%;
+        }
+    }
+    h2 {
+        font-family: 'Georgia', 'Times New Roman', serif;
+        color:$secondarycolor;
+        text-transform: none;
+    }
+}
+
+#blog-feed{
+    padding-bottom:40px;
+    .align{
+        text-align:center;
+        h3.blog{
+            color:$primarycolor;
+        }
+        h3.blog:after{
+            border-bottom: 1px solid #5d6573;
+            border-color: #5d6573;
+            border-width: 1px;
+            content: "";
+            display: block;
+            height: 5px;
+            margin-left: 0;
+            padding-top: 20px;
+            margin-bottom:30px;
+            position: relative;
+            left:50%;
+            @include translate(-50%, 0);
+            width: 30%;
+        }
+    }
+    .wrap{
+        position:relative;
+        background:$secondarycolor;
+        padding:20px;
+        border-top:10px solid $primarycolor;
+        margin-top:-1px;
+        h4{
+            border-bottom:1px solid $white;
+            padding-bottom:15px;
+            line-height:28px;
+            a {  
+                color:$white;
+                @include transition(all, 0.5s, ease-in-out);
+            }
+            a:hover{
+                color:$primarycolor;
+            }
+        }
+        p {
+            color:$white;
+        }
+        a.contact{
+            display:inline-block;
+            border-bottom:3px solid $white;
+            @include transition(all, 0.5s, ease-in-out);
+        }
+        a.contact:hover{
+            border-bottom:3px solid $primarycolor;
+            color:$primarycolor;
+            background:$white;
+        }
+        .align{
+            text-align:right;
+        }
+    }
+}
+
+/**
+ *  8.1 BLOG SINGLE
+ * ------------------------------------
+ */
+.single #content .entry-meta, .single #content .entry-share, .single #content h3 { float:left;}
+.entry-share {
+    font-size: 13px;
+}
+.single #content .entry-meta {margin:20px 0 0 20px!important;}
+.avatar {margin-left:0!important;}
+.entry-share, .woocommerce.single-product .summary .entry-share {
+    font-size: 16px;
+    max-width:250px;
+    margin-bottom:25px;
+    ul{
+        li {
+            list-style: none;
+            float:left;
+            width:20%;
+            padding:0 10px;
+            @include transition(background, 0.15s, ease-in-out);
+            a {
+                color:$white;
+                display:block;
+                padding:10px 0;
+                text-align:center;
+            }
+        }
+        li.twitter-share {background:$primarycolor;}
+        li.facebook-share {background:$secondarycolor;}
+        li.gplus-share {background:$primarycolor;}
+        li.linkedin-share {background:$secondarycolor;}
+        li.whatsapp-share {background:$primarycolor;}
+    }
+    li:hover {
+        background:$lighterblue !important;
+    }
+}
+.entry-share a:hover {
+    text-decoration: none;
+}
+.entry-share-link {
+    position: relative;
+}
+.share-popup {
+    @include abs-pos(auto, auto, 38px, 50%);
+    @include border-radius(6px);
+    text-align: center;
+    background-color: $white;
+    border: 1px solid rgba(0, 0, 0, .10);
+    padding: 12px 30px 10px;
+    width: 170px;
+    display: none;
+    @include translate(-50%, 0);
+    z-index: 99999;
+}
+.share-popup:after {
+    @include abs-pos(auto, auto, -2px, 1px);
+    color: $white;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, .10) 1px 0 0;
+    @include rotate(90deg);
+    width: 100%;
+    content: "▸";
+    display: block;
+    font-size: 2em;
+    height: 0;
+    line-height: 0;
+}
+.share-popup a {
+    font-size: 20px;
+}
+
+
+/**
+ * 12. COMMON STYLE / BORDERS
+ * ------------------------------------
+ */
+
+/* SHARING */
+
+.single{
+    #content{
+        .entry-feature {
+            margin: 0 0 34px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .entry-header {
+            width: 25%;
+            float: left;
+        }
+        .entry-header a {
+            color: #8c8d90;
+        }
+        .entry-author img {
+            margin: 0 0 18px;
+            display: block;
+            max-width: 100%;
+        }
+        .entry-tags, .comments-link, .entry-author {
+            a {
+                color:$primarycolor;
+            }
+            a:hover {
+                color:$secondarycolor;
+            }
+        }
+        .entry-meta,
+        .entry-share {
+            font-size: 13px;
+            margin: 8px 0;
+        }
+        .avatar {margin-left:0!important;}
+        .entry-share{
+            font-size: 16px;
+            margin-bottom:0px;
+            margin-top:20px;
+            padding-top:0;
+            float:right;
+            p{
+                display:inline;
+                margin-bottom:0;
+                font-family: 'SuperGroteskC-Med';
+                text-transform:uppercase;
+                font-size:80%;
+                line-height: 34px;
+            }
+            ul.social{
+                position:relative;
+                display:block;
+                text-align:right;
+                margin: 0 0 10px;
+                float:right;
+                li {
+                    float:none;
+                    display: inline-block;
+                    margin: 0 4px;
+                    padding: 0;
+                    font-size:100%;
+                    a {
+                        @include border-radius(50%);
+                        background:$secondarycolor;
+                        display:block;
+                        @include transition(all, 0.5s, ease-in-out);
+                        i {
+                            display: block;
+                            height:25px;
+                            line-height: 25px;
+                            width:25px;
+                            color:$white;
+                        }
+                        i.fa-google-plus{
+                            font-size: 90%;
+                            padding-right: 3px;
+                        }
+                        i.fa-twitter{
+                            padding-right: 5px;
+                        }
+                        i.fa-facebook{
+                            padding-right: 8px;
+                        }
+                    }
+                    a:hover{
+                        background:$primarycolor;
+                        i{
+                            color:none;
+                        }
+                    }
+                }
+                li:nth-child(1){
+                    margin-left:15px;
+                }
+            }
+        }
+        .entry-share a:hover {
+            text-decoration: none;
+        }
+        .entry-share-link {
+            position: relative;
+        }
+        .share-popup {
+            @include abs-pos(auto, auto, 38px, 50%);
+            @include border-radius(6px);
+            @include translate(-50%, 0);
+            text-align: center;
+            background-color: $white;
+            border: 1px solid rgba(0, 0, 0, .10);
+            padding: 12px 30px 10px;
+            width: 170px;
+            display: none;
+
+            z-index: 99999;
+        }
+        .share-popup:after {
+            color: $white;
+            bottom: -2px;
+            left: 1px;
+            text-align: center;
+            text-shadow: rgba(0, 0, 0, .10) 1px 0 0;
+            @include rotate(90deg);
+            width: 100%;
+            content: "▸";
+            display: block;
+            font-size: 2em;
+            height: 0;
+            line-height: 0;
+            position: absolute;
+        }
+        .share-popup a {
+            font-size: 20px;
+        }
+    }
+}
+/* BLOG FEED */
+
+#blog-feed .wrap {
+    min-height: 300px;
+}
+#blog-feed .absolute{
+    @include abs-pos(auto, 20px, 20px, auto);
+}
